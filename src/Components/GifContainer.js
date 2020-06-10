@@ -1,9 +1,9 @@
 import React from 'react';
-import GifItem from './GifView';
+import GifView from './GifView';
 
 const GifContainer = (props) => {
   const gifItems = props.gifs.map((image) => {
-    return <GifItem key={image.id} gif={image} />
+    return <GifView key={image.id} gif={image} />
   });
 
   return (
